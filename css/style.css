@@ -1,0 +1,117 @@
+/* Definição das Variáveis de Cores */
+:root {
+    --bg-color: #121212;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --accent-color: #ffffff; /* Branco puro para destaques */
+    --card-border: #333333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Suaviza as fontes no fundo escuro */
+    -webkit-font-smoothing: antialiased; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--text-secondary);
+}
+
+/* Navegação */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--text-primary) !important;
+}
+
+/* Área Hero */
+.hero-section {
+    padding: 120px 0;
+}
+
+.hero-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-primary);
+}
+
+.hero-subtext {
+    color: var(--text-secondary);
+}
+
+/* Cartões de Projeto */
+.project-card {
+    border-top: 1px solid var(--card-border);
+    padding-top: 25px;
+    margin-bottom: 80px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-top-color: var(--accent-color); /* A linha muda de cor ao passar o mouse */
+}
+
+.project-year {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-family: monospace; /* Fonte estilo código para números */
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 90%;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--text-secondary);
+    padding-bottom: 2px;
+}
+
+/* Rodapé */
+footer {
+    border-top: 1px solid var(--card-border);
+    color: var(--text-secondary);
+}
+
+
+/* --- Efeitos de Scroll --- */
+
+/* Estado inicial: Invisível e deslocado para baixo */
+.hidden {
+    opacity: 0;
+    filter: blur(5px); /* Um leve desfoque fica chique */
+    transform: translateY(50px); /* Empurrado 50px para baixo */
+    transition: all 1.2s ease; /* A mágica da suavidade (1.2 segundos) */
+}
+
+/* Estado final: Visível e na posição original */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Opcional: Atrasar elementos para fazer efeito "escadinha" */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
