@@ -198,3 +198,47 @@ footer {
     color: #7952B3;
     filter: drop-shadow(0 0 5px rgba(121, 82, 179, 0.5));
 }
+
+
+/* --- Página de Contato --- */
+
+/* Estilo para Inputs Escuros */
+.form-dark {
+    background-color: #0a0a0a; /* Mais escuro que o card */
+    border: 1px solid #333;
+    color: var(--text-primary);
+    padding: 15px; /* Mais espaço interno fica mais elegante */
+    border-radius: 12px;
+}
+
+.form-dark:focus {
+    background-color: #0a0a0a;
+    color: var(--text-primary);
+    border-color: var(--accent-color); /* Borda branca/destaque ao clicar */
+    box-shadow: none; /* Remove o brilho azul padrão do Bootstrap */
+}
+
+/* Placeholder mais discreto */
+.form-dark::placeholder {
+    color: #444;
+}
+
+/* Animação do pingo verde (Status Disponível) */
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.animate-ping {
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Cores das Redes Sociais (Hover) */
+.social-icon { color: inherit; transition: transform 0.2s; display: inline-block; }
+.social-icon:hover { transform: translateY(-3px); }
+
+.icon-linkedin:hover { color: #0077b5; filter: drop-shadow(0 0 8px rgba(0,119,181, 0.5)); }
+.icon-github:hover { color: #ffffff; filter: drop-shadow(0 0 8px rgba(255,255,255, 0.5)); }
+.icon-insta:hover { color: #E1306C; filter: drop-shadow(0 0 8px rgba(225,48,108, 0.5)); }
+.icon-whatsapp:hover { color: #25D366; filter: drop-shadow(0 0 8px rgba(37,211,102, 0.5)); }
