@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Henrique | Desenvolvedor Web</title>
-    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light pt-4">
         <div class="container">
             <a class="navbar-brand" href="#">BRUNO HENRIQUE.</a>
-            
+    
             <div class="ms-auto">
-                <a href="mailto:brunohenrique.ps@outlook.com" class="btn btn-dark rounded-0">Contato</a>
+                <div class="btn btn-dark">
+                    <a href="#meus-projetos" class="text-white text-decoration-none">Projetos</a>
+                </div>
+                <a href="mailto:brunohenrique.ps@outlook.com" class="btn btn-dark">Contato</a>
             </div>
+    
         </div>
     </nav>
 
@@ -24,11 +34,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10">
-                    <p id="saudacao" class="text-secondary mb-2 fw-bold text-uppercase" style="font-size: 0.8rem; letter-spacing: 2px;">
-                    Carregando...
-                </p>
+                    <p id="saudacao" class="text-secondary mb-2 fw-bold text-uppercase"
+                        style="font-size: 0.8rem; letter-spacing: 2px;">
+                        Carregando...
+                    </p>
                     <h1 class="hero-text">
-                        Olá. Eu sou um desenvolvedor web iniciante focado em HTML, CSS e JavaScript. <br>
+                        Olá. Eu sou um desenvolvedor web iniciante focado UI/UX Design <br>
                         <span style="color: #666;">Construindo minha jornada, um commit de cada vez.</span>
                     </h1>
                 </div>
@@ -36,10 +47,83 @@
         </div>
     </section>
 
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 d-flex flex-column">
+                    <div class="bento-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="fs-4 fw-bold mb-3 text-white"> Estudando para UI/UX Design</h2>
+                            <p class="text-secondary small">
+                                2 anos criando interfaces no universo web. Focado em HTML, CSS e JS.
+                            </p>
+                            <a href="mailto:brunohenrique.ps@outlook.com"
+                                class="btn btn-light rounded-pill px-4 mt-3 fw-bold">Diga Olá</a>
+                        </div>
+
+                        <div class="mt-4">
+                            <div id="data-atual" class="text-secondary small mb-1">Carregando data...</div>
+                            <div id="relogio-atual" class="fs-2 fw-light text-white">00:00:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="bento-card h-100 d-flex align-items-center justify-content-center">
+
+                        <div>
+                            <h3 class="fs-4 fw-normal text-white lh-base">
+                                Olá, sou o Bruno Henrique. Sou um desenvolvedor web iniciante apaixonado pela
+                                intersecção entre o design e a tecnologia. Atualmente, foco em transformar requisitos
+                                técnicos em experiências visuais agradáveis, utilizando HTML, CSS, JavaScript e
+                                Bootstrap. Com projetos que vão de galerias interativas a e-commerces integrados com
+                                Firebase, busco constantemente o equilíbrio entre a estética funcional (UI) e a lógica
+                                de programação eficiente.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 d-flex flex-column gap-4">
+
+                    <div class="bento-card flex-grow-1">
+                        <h4 class="fs-6 text-white mb-3">Desenvolvimento Web</h4>
+                        <p class="text-secondary small mb-4">Foco em tecnologias modernas e código semântico.</p>
+                    
+                        <div class="d-flex gap-3 fs-3 text-secondary">
+                            <i class="bi bi-filetype-html icon-html colored" title="HTML5"></i>
+                            <i class="bi bi-filetype-css icon-css colored" title="CSS3"></i>
+                            <i class="bi bi-filetype-js icon-js colored" title="JavaScript"></i>
+                            <i class="bi bi-bootstrap icon-bs colored" title="Bootstrap"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="bento-card flex-grow-1 position-relative overflow-hidden">
+                        <h4 class="fs-6 text-white mb-3">Web Design</h4>
+                        <p class="text-secondary small">Utilizando Figma para criar layouts pixel-perfect.</p>
+
+                        <div class="mt-3 p-3 border border-secondary border-opacity-25 rounded bg-dark position-relative"
+                            style="transform: rotate(-5deg); width: 120%; margin-left: -10%;">
+                            <span class="text-white fw-bold fs-2">Figma</span>
+                            <i class="bi bi-cursor-fill text-white position-absolute"
+                                style="bottom: 10px; right: 40px; font-size: 1.5rem;"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="projects-section py-5 hidden">
         <div class="container">
-            <h2 class="mb-5 text-uppercase" style="font-size: 0.9rem; letter-spacing: 2px;">Projetos Selecionados</h2>
-            
+            <h2 class="mb-5 text-uppercase" style="font-size: 0.9rem; letter-spacing: 2px;" id="meus-projetos">Projetos Selecionados</h2>
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="project-card">
@@ -48,8 +132,11 @@
                             <span class="badge bg-secondary rounded-0">Bootstrap</span>
                         </div>
                         <h3 class="project-title mt-3">3DGalleri</h3>
-                        <p>Uma plataforma interativa desenvolvida para entusiastas de impressão 3D explorarem e baixarem modelos STL. O projeto foca em uma interface moderna com suporte a Modo Escuro e design totalmente responsivo.</p>
-                        <a href="https://github.com/MrFisror/3DGalleri" class="text-decoration-underline">Ver código &rarr;</a>
+                        <p>Uma plataforma interativa desenvolvida para entusiastas de impressão 3D explorarem e baixarem
+                            modelos STL. O projeto foca em uma interface moderna com suporte a Modo Escuro e design
+                            totalmente responsivo.</p>
+                        <a href="https://github.com/MrFisror/3DGalleri" class="text-decoration-underline">Ver código
+                            &rarr;</a>
                     </div>
                 </div>
 
@@ -57,11 +144,15 @@
                     <div class="project-card">
                         <div class="d-flex justify-content-between">
                             <span class="project-year">2025</span>
-                            <span class="badge bg-secondary rounded-0">JS</span>
+                            <span class="badge bg-secondary rounded-0">BD</span>
                         </div>
                         <h3 class="project-title mt-3">Level Up Store - e-commerce</h3>
-                        <p>Um e-commerce de jogos dinâmico desenvolvido para proporcionar uma experiência de compra completa. O diferencial deste projeto é a integração com o Google Firebase, permitindo o gerenciamento de dados em tempo real e uma infraestrutura escalável sem a necessidade de um servidor backend tradicional.</p>
-                        <a href="https://github.com/MrFisror/Level-Up-Store---Firebase" class="text-decoration-underline">Ver código &rarr;</a>
+                        <p>Um e-commerce de jogos dinâmico desenvolvido para proporcionar uma experiência de compra
+                            completa. O diferencial deste projeto é a integração com o Google Firebase, permitindo o
+                            gerenciamento de dados em tempo real e uma infraestrutura escalável sem a necessidade de um
+                            servidor backend tradicional.</p>
+                        <a href="https://github.com/MrFisror/Level-Up-Store---Firebase"
+                            class="text-decoration-underline">Ver código &rarr;</a>
                     </div>
                 </div>
 
@@ -69,11 +160,14 @@
                     <div class="project-card">
                         <div class="d-flex justify-content-between">
                             <span class="project-year">2025</span>
-                            <span class="badge bg-secondary rounded-0">JS</span>
+                            <span class="badge bg-secondary rounded-0">HTML</span>
                         </div>
-                        <h3 class="project-title mt-3">Bruno Henrique - Portifólio</h3>
-                        <p>Um e-commerce de jogos dinâmico desenvolvido para proporcionar uma experiência de compra completa. O diferencial deste projeto é a integração com o Google Firebase, permitindo o gerenciamento de dados em tempo real e uma infraestrutura escalável sem a necessidade de um servidor backend tradicional.</p>
-                        <a href="https://github.com/MrFisror/Level-Up-Store---Firebase" class="text-decoration-underline">Ver código &rarr;</a>
+                        <h3 class="project-title mt-3">Bruno Henrique — Portfólio Digital</h3>
+                        <p>Este projeto é o meu centro de curadoria pessoal, desenvolvido para apresentar minha evolução
+                            como desenvolvedor e aspirante a Design Engineer. O foco principal foi criar uma interface
+                            de alta legibilidade, com design minimalista e focado na experiência do usuário.</p>
+                        <a href="https://github.com/MrFisror/meu-portfolio" class="text-decoration-underline">Ver código
+                            &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +180,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,23 @@
+html {
+      scroll-behavior: smooth;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 /* Definição das Variáveis de Cores */
 :root {
     --bg-color: #121212;
@@ -7,12 +27,14 @@
     --card-border: #333333;
 }
 
+
+
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* Suaviza as fontes no fundo escuro */
+    font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -115,3 +137,64 @@ footer {
 /* Opcional: Atrasar elementos para fazer efeito "escadinha" */
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
+
+
+/* --- Bento Grid Styles --- */
+
+.bento-card {
+    background-color: #1a1a1a; /* Cinza escuro, mas não preto */
+    border-radius: 24px;       /* Bordas bem arredondadas */
+    padding: 2rem;             /* Espaçamento interno generoso */
+    border: 1px solid #333;    /* Borda sutil */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bento-card:hover {
+    border-color: #555;        /* Borda fica mais clara ao passar o mouse */
+    transform: translateY(-2px); /* Flutua levemente */
+}
+
+/* Ajuste específico para o botão branco */
+.btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    transition: transform 0.2s ease;
+}
+.btn-light:hover {
+    transform: scale(1.05); /* Botão cresce um pouco */
+    background-color: #f0f0f0;
+}
+
+
+/* --- Cores dos Ícones de Tecnologias --- */
+
+/* Remove a cor cinza padrão e adiciona transição suave */
+.icon-html, .icon-css, .icon-js, .icon-bs {
+    color: inherit; /* Começa cinza (herdado do pai) */
+    transition: all 0.3s ease;
+}
+
+/* HTML5 */
+.icon-html:hover, .icon-html.colored {
+    color: #E34F26;
+    filter: drop-shadow(0 0 5px rgba(227, 79, 38, 0.5));
+}
+
+/* CSS3 */
+.icon-css:hover, .icon-css.colored {
+    color: #1572B6;
+    filter: drop-shadow(0 0 5px rgba(21, 114, 182, 0.5));
+}
+
+/* JavaScript */
+.icon-js:hover, .icon-js.colored {
+    color: #F7DF1E;
+    filter: drop-shadow(0 0 5px rgba(247, 223, 30, 0.5));
+}
+
+/* Bootstrap */
+.icon-bs:hover, .icon-bs.colored {
+    color: #7952B3;
+    filter: drop-shadow(0 0 5px rgba(121, 82, 179, 0.5));
+}
