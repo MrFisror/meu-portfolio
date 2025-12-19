@@ -2,7 +2,8 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal. O projeto foi concebido como um **Bento Grid** moderno e minimalista, focado em demonstrar minhas habilidades na intersecção entre o design de interface (UI) e o desenvolvimento front-end.
 
-🚀 **Link para o projeto:** [mrfisror.github.io/meu-portfolio/](https://mrfisror.github.io/meu-portfolio/)
+**Link para o projeto:** [mrfisror.github.io/meu-portfolio/]
+**Link para o pages:** (https://mrfisror.github.io/meu-portfolio/)
 
 ---
 
