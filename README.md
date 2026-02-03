@@ -41,9 +41,9 @@ O projeto foi construído utilizando tecnologias modernas de front-end:
 ## 📁 Estrutura do Projeto
 
 ```text
-├── index.html       # Estrutura principal
+├── index.html       
 ├── css/
-│   └── style.css    # Estilização personalizada e variáveis
+│   └── style.css   
 ├── js/
-│   └── script.js   # Lógica de animação, relógio e scroll suave
-└── assets/          # Imagens e ícones (se houver)
+│   └── script.js   
+└── assets/         
